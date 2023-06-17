@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss","style.css"],"names":[],"mappings":"AAAQ,uBAAA;AAER;EACE,yBAAA;ACAF","file":"style.css","sourcesContent":["@import \"normalize.css\";\r\n\r\nhtml {\r\n  background-color: #f4f4f5;\r\n}\r\n","@import \"normalize.css\";\nhtml {\n  background-color: #f4f4f5;\n}"]}

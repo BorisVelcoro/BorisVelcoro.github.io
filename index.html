@@ -4,7 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>FrontCloudCamp</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="my-info">
+        <div class="my-icon">
+          <p>BZ</p>
+        </div>
+        <h2>Boris Zasimov</h2>
+        <nav class="my-links">
+          <ul>
+            <li class="tg-link">
+              <img class="folder-image" src="" alt="" />
+              <a>Telegram</a>
+            </li>
+            <li class="github-link">
+              <img class="folder-image" src="" alt="" />
+              <a>GitHub</a>
+            </li>
+            <li class="resume-link">
+              <img class="folder-image" src="" alt="" />
+              <a>Resume</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="first-modal-window">
+        <form action="/create.html">
+          <label for="phoneNumber">Номер Телефона</label>
+          <input
+            id="phoneNumber"
+            type="tel"
+            placeholder="+7 (900) 000-00-00"
+            required
+          />
+          <label for="emailAddress">Email</label>
+          <input
+            id="emailAddress"
+            type="email"
+            placeholder="tim.jennings@example.com"
+            required
+          />
+          <button id="button-start">Начать</button>
+        </form>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
