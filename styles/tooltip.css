@@ -1,12 +1,3 @@
-@import "normalize.css";
-html {
-  background-color: #f4f4f5;
-}
-
-.global-wrapper {
-  background-color: #ffffff;
-}
-
 .tooltip {
   position: relative;
   display: inline-block;
@@ -33,4 +24,4 @@ html {
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=tooltip.css.map */

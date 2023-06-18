@@ -1,0 +1,28 @@
+@import "normalize.css";
+@import "tooltip.css";
+
+html {
+  background-color: #f4f4f5;
+}
+
+.global-wrapper {
+  background-color: #ffffff;
+}
+
+.active {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.button-trash {
+  border: none;
+  background: none;
+}
+
+#button-add {
+  border: none;
+  background: none;
+}
