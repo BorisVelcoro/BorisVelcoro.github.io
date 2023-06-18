@@ -26,6 +26,7 @@ function goToNextForm(step) {
     $secondForm.classList.add("hidden");
     $thirdForm.classList.remove("hidden");
     $thirdForm.classList.add("active");
+    $nextButton.classList.add("hidden");
     stepState = 2;
   } else {
     alert("modal window opens here");
@@ -46,6 +47,7 @@ function goBack(step) {
     $thirdForm.classList.add("hidden");
     $secondForm.classList.remove("hidden");
     $secondForm.classList.add("active");
+    $nextButton.classList.remove("hidden");
     stepState = 1;
   }
 }
