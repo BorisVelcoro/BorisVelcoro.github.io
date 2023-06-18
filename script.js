@@ -1,3 +1,5 @@
 const $startButton = document.getElementById("button-start");
 
-$startButton.addEventListener("click", () => {});
+let stepState = 0;
+
+// $startButton.addEventListener("click", () => {});

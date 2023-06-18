@@ -8,34 +8,144 @@
     <title>FrontCloudCamp</title>
   </head>
   <body>
-    <header>
-      <div class="stepper" style="background-color: blue">
-        PROGRESS BAR WILL GO HERE
-      </div>
-    </header>
-    <main>
-      <form action="">
-        <label for="advantages">Advantages</label>
-        <input id="advantages" type="text" placeholder="Placeholder" />
-        <input id="advantages" type="text" placeholder="Placeholder" />
-        <input id="advantages" type="text" placeholder="Placeholder" />
-        <button id="button-add">+</button>
-      </form>
-      <form>
-        <label for="checkboxGroup">Checkbox group</label>
-        <input type="checkbox" id="field-checkbox-group-option-1" />
-        <input type="checkbox" id="field-checkbox-group-option-1" />
-        <input type="checkbox" id="field-checkbox-group-option-1" />
-      </form>
-      <form>
-        <label for="radioGroup">Radio Group</label>
-        <input type="radio" id="field-radio-group-option-1" />
-        <input type="radio" id="field-radio-group-option-2" />
-        <input type="radio" id="field-radio-group-option-3" />
-      </form>
-      <button id="button-back">Back</button>
-      <button id="button-next">Дальше</button>
-    </main>
+    <div class="global-wrapper">
+      <header>
+        <div class="stepper" style="background-color: blue">
+          PROGRESS BAR WILL GO HERE
+        </div>
+      </header>
+      <main>
+        <form
+          method="post"
+          action="https://api.sbercloud.ru/content/v1/bootcamp/frontend"
+        >
+          <label for="field-nickname">Nickname</label>
+          <input
+            id="field-nickname"
+            type="text"
+            placeholder="Placeholder"
+            maxlength="30"
+            onkeydown="return /[a-zA-Z0-9-]+/i.test(event.key)"
+          />
+          <div class="tooltip">
+            Tip
+            <span class="tooltiptext">
+              Max. length 30 symbols. Only letters and numbers allowed
+            </span>
+          </div>
+
+          <label for="field-name">Name</label>
+          <input
+            id="field-name"
+            type="text"
+            placeholder="Placeholder"
+            maxlength="50"
+            onkeydown="return /[a-zA-Z]/i.test(event.key)"
+          />
+          <div class="tooltip">
+            Tip
+            <span class="tooltiptext">
+              Max. length 50 symbols. Letters only
+            </span>
+          </div>
+
+          <label for="field-surname">Surname</label>
+          <input
+            id="field-surname"
+            type="text"
+            placeholder="Placeholder"
+            maxlength="50"
+            onkeydown="return /[a-zA-Z]/i.test(event.key)"
+          />
+          <div class="tooltip">
+            Tip
+            <span class="tooltiptext">
+              Max. length 50 symbols. Letters only
+            </span>
+          </div>
+
+          <label for="sex-select">Sex</label>
+          <select id="sex-select">
+            <option value="" selected>Не выбрано</option>
+            <option value="man">man</option>
+            <option value="woman">woman</option>
+          </select>
+
+          <fieldset>
+            <legend>Advantages</legend>
+            <input
+              id="field-advantages-1"
+              type="text"
+              placeholder="Placeholder"
+            />
+            <button type="button" id="button-remove-1">🗑️</button>
+            <input
+              id="field-advantages-2"
+              type="text"
+              placeholder="Placeholder"
+            />
+            <button type="button" id="button-remove-2">🗑️</button>
+            <input
+              id="field-advantages-3"
+              type="text"
+              placeholder="Placeholder"
+            />
+            <button type="button" id="button-remove-3">🗑️</button>
+            <button type="button" id="button-add">+</button>
+          </fieldset>
+
+          <fieldset>
+            <legend>Checkbox group</legend>
+            <input type="checkbox" id="field-checkbox-group-option-1" />
+            <label for="field-checkbox-group-option-1">1</label>
+            <input type="checkbox" id="field-checkbox-group-option-2" />
+            <label for="field-checkbox-group-option-2">2</label>
+            <input type="checkbox" id="field-checkbox-group-option-3" />
+            <label for="field-checkbox-group-option-3">3</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Radio Group</legend>
+            <input
+              type="radio"
+              id="field-radio-group-option-1"
+              value="1"
+              name="radio-group"
+            />
+            <label for="field-radio-group-option-1">1</label>
+            <input
+              type="radio"
+              id="field-radio-group-option-2"
+              value="2"
+              name="radio-group"
+            />
+            <label for="field-radio-group-option-2">2</label>
+            <input
+              type="radio"
+              id="field-radio-group-option-3"
+              value="3"
+              name="radio-group"
+            />
+            <label for="field-radio-group-option-3">3</label>
+          </fieldset>
+
+          <label for="field-about">About</label>
+          <input
+            id="field-about"
+            type="text"
+            placeholder="Placeholder"
+            maxlength="200"
+          />
+          <div class="tooltip">
+            Tip
+            <span class="tooltiptext"> Max. length 200 symbols</span>
+          </div>
+          <button type="submit" id="button-send">Отправить</button>
+        </form>
+        <button id="button-back">Back</button>
+        <button id="button-next">Дальше</button>
+      </main>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
